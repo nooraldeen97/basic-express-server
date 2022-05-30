@@ -23,15 +23,4 @@ describe("testing my API",()=>{
         expect(response.body.massage).toEqual("Server Error name not provided")
         expect(response.status).toEqual(500);
      })
-
-     test('test if the name is string 200',async()=>{
-        const response=await request.get("/person?name=noor")
-        expect(response.body.name).toEqual("noor")
-        expect(response.status).toEqual(200);
-     })
-
-     test('test if the name is string 200',async()=>{
-        const response=await request.get("/person?name=noor")
-        expect(response.body).toEqual({"name" : "noor"})
-     })
 })
