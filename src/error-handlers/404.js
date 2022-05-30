@@ -1,7 +1,7 @@
 "use strict";
 
 function notFound(req,res,next){
-    res.json({
+    res.status(404).json({
         code:404,
         massage:"Page not found"
     })
